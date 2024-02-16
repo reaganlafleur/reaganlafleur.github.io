@@ -1,0 +1,39 @@
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 18px;
+}
+
+header, footer{
+    background-color: #7F9151;
+}
+
+.site-title {
+    color: #002500;
+}
+
+#my-image {
+    box-shadow: 0 0 2px 1px black;
+}
+
+section h2 + ul {
+    list-style-type: square;
+}
+
+section h2 + ul li:nth-child(odd) {
+    background-color: #F87060;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav a {
+    text-decoration: none;
+    background-color: beige;
+    border: 1px solid #002500;
+}
+
+nav a:hover, nav a:focus {
+    background-color: darksalmon;
+    border: 1px solid darkred;
+}
