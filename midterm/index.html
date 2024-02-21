@@ -10,7 +10,7 @@
     <!-- header with image inside and title on top of image  -->
     <header>
         <h1>Lone Starfish</h1>
-        <img src="images/lone-starfish-wide.jpg" alt="Lone starfish wide photo for header bckground">
+        <img src="images/lone-starfish-wide.jpg" alt="Lone starfish wide photo for header background">
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
@@ -38,11 +38,11 @@
         <!-- Contact form section using fieldset tags to create the border surrounding the info -->
         <section>
             <h3>Contact to Learn More</h3>
-            <!-- left action empty because it's a single page website  -->
-            <form action="" method="post">
+            <!-- set action to index.html because it's a single page website  -->
+            <form action="index.html" method="post">
                 <fieldset>
+                    <legend>Contact Information</legend>
                     <div>
-                        <legend>Contact Information</legend>
                         <label for="fullname">Your Name</label>
                         <input id="fullname" type="text" name="fullname" required>
                     </div>
@@ -64,7 +64,8 @@
 
                         <label for="maybe">Maybe</label>
                         <input id="maybe" type="radio" name="reply" value="m">
-
+                    </div>
+                    <div>
                         <button type="submit">Send</button>
                     </div>
                 </fieldset>
