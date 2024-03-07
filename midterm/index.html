@@ -8,11 +8,16 @@
 </head>
 <!-- add wrapper to entire body content -->
 <body>
+
     <div class="wrapper">
+
         <!-- header with image inside and title on top of image  -->
+
         <header>
             <h1>Lone Starfish</h1>
+
             <img src="images/lone-starfish-wide.jpg" alt="Lone starfish wide photo for header background">
+
             <nav class="nav-list">
                 <ul>
                     <li><a href="index.html">Home</a></li>
@@ -21,15 +26,20 @@
                 </ul>
             </nav>
         </header>
+
         <main>
             <!-- use h2 heading and text wrap paragrapgh around lone starfish image  -->
             <article id="starfishstory">
                 <h2>Life of a Starfish</h2>
+
                 <img src="images/lone-starfish.jpg" alt="Square lone starfish image for article">
+
                 <p class="article-paragraph">Swallower catla Black angelfish grunter striped bass scissor-tail rasbora; slender mola. Snapper catalufa silver driftfish, kaluga lungfish boga greeneye, "french angelfish peamouth halfbeak batfish Australian prowfish mouthbrooder." Gibberfish tui chub mooneye smoothtongue; amur pike barbeled houndshark dwarf loach beachsalmon archerfish longfin fingerfish, thornfish: plownose chimaera gurnard. Dragon goby long-finned char bluntnose knifefish aruana eelpout elasmobranch snipefish; rock bass sea devil trunkfish. Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy. Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra. Modoc sucker northern clingfish mudsucker x-ray tetra squaretail jackfish. Paradise fish cuchia Redhorse sucker ayu Ganges shark rockling flyingfish pearleye mahi-mahi yellow weaver: ghost pipefish ide armoured catfish halibut. Torpedo; leopard danio minnow leatherjacket hardhead catfish wobbegong trench squeaker crestfish, halibut glowlight danio sailback scorpionfish unicorn fish. Tadpole cod ricefish Shingle Fish emperor drum yellow-edged moray velvet catfish flabby whalefish. Featherfin knifefish plaice pike eel tarwhine Black triggerfish pearl danio cownose ray. Merluccid hake, platy peamouth humuhumunukunukuapua'a barred danio. Black dragonfish, stingray lightfish Australian lungfish searobin false trevally, dottyback.</p>
 
             <!-- use h3 heading and unordered lists for starfish facts  -->
+
                 <h3>Facts about Starfish</h3>
+
                 <ul class="facts-list-styling">
                     <li>Australian herring barbel Mexican golden trout, killifish bonito; northern anchovy.</li>
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
@@ -37,44 +47,67 @@
                     <li>Waryfish, "lionfish; longfin smelt; leopard danio dragonfish," Lost River sucker, mojarra.</li>
                 </ul>
             </article>
+
             <!-- Contact form section using fieldset tags to create the border surrounding the info -->
+
             <section id="contactform">
                 <h3>Contact to Learn More</h3>
+
                 <!-- set action to index.html because it's a single page website  -->
+
                 <form action="index.html" method="post" class="form-info-styling">
                     <fieldset>
                         <legend>Contact Information</legend>
-                        <div>
+
+                        <!-- SECTION FOR INFORMATION TO BE TYPED IN. "textarea" needs two classes for formatting -->
+
+                        <div class="form-padding">
                             <label for="fullname">Your Name</label>
-                            <input id="fullname" type="text" name="fullname" required>
+                            <input class="text-input"  id="fullname" type="text" name="fullname" required>
                         </div>
-                        <div>
+                        <div class="form-padding">
                             <label for="email">Your Email</label>
-                            <input id="email" type="email" name="email" required>
+                            <input class="text-input" id="email" type="email" name="email" required>
                         </div>
-                        <div>
+                        <div class="form-padding">
                             <label for="message">Your Message</label>
-                            <textarea name="message" id="message"></textarea>
+                            <textarea class="text-input textarea-input" name="message" id="message"></textarea>
                         </div>
-                        <div>
-                            <h4>Would you like to visit the starfish?</h4>
-                            <label for="yes">Yes</label>
-                            <input id="yes" type="radio" name="reply" value="y">
 
-                            <label for="no">No</label>
-                            <input id="no" type="radio" name="reply" value="n">
+                        <!-- WOULD YOU LIKE TO VISIT THE STARFISH SECTION -->
 
-                            <label for="maybe">Maybe</label>
-                            <input id="maybe" type="radio" name="reply" value="m">
+                        <div class="form-padding">
+                            <h4 class="hfour">Would you like to visit the starfish?</h4>
                         </div>
-                        <div>
+
+                        <!-- Radio button selections (add classes to format them to be inline) -->
+
+                        <div class="form-padding">
+                            <label class="radio-label" for="yes">Yes</label>
+                            <input class="radio-input" id="yes" type="radio" name="reply" value="y">
+                            
+                            
+                            <label class="radio-label" for="no">No</label>
+                            <input class="radio-input" id="no" type="radio" name="reply" value="n">
+                            
+                            
+                            <label class="radio-label" for="maybe">Maybe</label>
+                            <input class="radio-input" id="maybe" type="radio" name="reply" value="m">
+                        </div>
+                        
+                        <!-- Send button (with a "submit" type)-->
+
+                        <div class="form-padding">
                             <button type="submit">Send</button>
                         </div>
+
                     </fieldset>
                 </form>
             </section>
         </main>
+
         <footer class="footer-styling"> &copy; Lone Starfish.</footer>
+
     </div>
 </body>
 </html>

@@ -1,4 +1,5 @@
 /* insert css reset */
+
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -49,6 +50,10 @@ table {
 }
 /* css reset ends */
 
+
+/* ROOT STYLING */
+
+
 html {
      font-size: 16px;
 }
@@ -67,6 +72,10 @@ body {
 	width: 904px;
 	margin: auto;
 }
+
+
+/* HEADER STYLING */
+
 
 header {
 	position: relative;
@@ -106,13 +115,17 @@ nav li:last-child {
 
 /* remember to fix the font weight, it's not showing up */
 
-/* future me: I believe the used font family only has font weights set at 300, 500, 700, 900 etc. So don't use font weights higher than 600 to keep similarity to mockup */
+/* future me: I believe the used font family only has font weights set at 300, 500, 700, 900 etc. So don't use font weights higher than 600 in order to keep similarity to mockup */
 
 nav a {
 	font-weight: 500;
 	color: black;
 	text-decoration: none;
 }
+
+
+/* MAIN - ARTICLE (STORY) SECTION STYLING */
+
 
 main {
 	margin: 20px 0;
@@ -129,6 +142,12 @@ main img {
 	height: auto;
 	float: left;
 	margin: 1rem; 
+	margin-left: 0;
+}
+
+article p {
+	margin: 1rem;
+	margin-left: 0;
 }
 
 /* use font weight 600 for paragraph and other body text  */
@@ -139,17 +158,80 @@ main img {
 
 main h3 {
 	font-size: 1.5rem;
+	margin: 1rem;
+	margin-left: 0;
 }
 
-.facts-list-styling {
+article#starfishstory ul.facts-list-styling {
 	font-weight: 600;
+	line-height: 1;
+	list-style-type: disc;
+	margin-left: 20px;
 }
+
+
+/* MAIN - CONTACT INFO STYLING */
+
 
 .form-info-styling {
 	font-weight: 600;
 }
 
+.form-padding {
+	padding: 15px;
+}
+
+form.form-info-styling fieldset{
+	border: 1px solid black;
+}
+
+/* don't display legend for form fieldset  */
+
+form.form-info-styling fieldset legend {
+	display: none;
+}
+
+.hfour {
+	font-size: 1.2rem;
+}
+
+form.form-info-styling label {
+	display: block;
+}
+
+/* to fix the "radio" options taking on the block display from previous code, add classes to the labels and inputs, for better specificity */
+form.form-info-styling .radio-input, form.form-info-styling .radio-label {
+    display: inline-block;
+}
+
+form.form-info-styling .text-input {
+	width: 100%;
+	padding: 10px;
+	box-sizing: border-box;
+}
+
+form.form-info-styling .textarea-input {
+	height: 100px;
+}
+
+form.form-info-styling .textarea-input {
+	resize: none;
+}
+form.form-info-styling button {
+	padding: 10px;
+	text-transform: uppercase;
+	background-color: #d3e7e5;
+}
+
+
+/* FOOTER STYLING */
+
+
+footer {
+	padding: 20px;
+}
+
 .footer-styling {
 	font-weight: 600;
+	text-align: right;
 }
-/* don't display legend for form fieldset  */
