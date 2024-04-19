@@ -9,25 +9,30 @@
 <body>
     <div class="wrapper">
         <header>
-            <img src="images/logo.png" alt="Three Star Media logo">
-            <!-- nav linking to the corresponding elements on the page -->
-            <div>
-                <nav>
-                    <ul>
-                        <li>Home</li>
-                        <li><a href="#abt-us">About Us</a></li>
-                        <li><a href="#srvs">Services</a></li>
-                        <li><a href="#tms">Team</a></li>
-                        <li><a href="#cntct">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>    
-            <!-- add a search icon to the search bar -->
-            <div>
-                <form action="index.html">
-                    <input type="search" placeholder="search" name="search">
-                    <button type="submit"><svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.97 17.031c-1.479 1.238-3.384 1.985-5.461 1.985-4.697 0-8.509-3.812-8.509-8.508s3.812-8.508 8.509-8.508c4.695 0 8.508 3.812 8.508 8.508 0 2.078-.747 3.984-1.985 5.461l4.749 4.75c.146.146.219.338.219.531 0 .587-.537.75-.75.75-.192 0-.384-.073-.531-.22zm-5.461-13.53c-3.868 0-7.007 3.14-7.007 7.007s3.139 7.007 7.007 7.007c3.866 0 7.007-3.14 7.007-7.007s-3.141-7.007-7.007-7.007z" fill-rule="nonzero"/></svg></button> 
-                </form>
+            <div class="yellow-box"></div>
+            <div class="header-container">
+                <div class="logo">
+                    <img src="images/logo.png" alt="Three Star Media logo">
+                </div>
+                <!-- nav linking to the corresponding elements on the page -->
+                <div>
+                    <nav>
+                        <ul>
+                            <li>Home</li>
+                            <li><a href="#abt-us">About Us</a></li>
+                            <li><a href="#srvs">Services</a></li>
+                            <li><a href="#tms">Team</a></li>
+                            <li><a href="#cntct">Contact</a></li>
+                        </ul>
+                    </nav>
+                </div>    
+                <!-- add a search icon to the search bar -->
+                <div class="search-bar">
+                    <form action="index.html">
+                        <input type="search" placeholder="search" name="search">
+                        <button type="submit"><svg clip-rule="evenodd" fill-rule="evenodd" stroke-linejoin="round" stroke-miterlimit="2" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m15.97 17.031c-1.479 1.238-3.384 1.985-5.461 1.985-4.697 0-8.509-3.812-8.509-8.508s3.812-8.508 8.509-8.508c4.695 0 8.508 3.812 8.508 8.508 0 2.078-.747 3.984-1.985 5.461l4.749 4.75c.146.146.219.338.219.531 0 .587-.537.75-.75.75-.192 0-.384-.073-.531-.22zm-5.461-13.53c-3.868 0-7.007 3.14-7.007 7.007s3.139 7.007 7.007 7.007c3.866 0 7.007-3.14 7.007-7.007s-3.141-7.007-7.007-7.007z" fill-rule="nonzero"/></svg></button> 
+                    </form>
+                </div>
             </div>
         </header>
         <main>
@@ -45,6 +50,7 @@
             <img src="images/about-us.jpg" alt="Ping pong table">
             <h2>About Us</h2>
             <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolorum aperiam nihil alias amet exercitationem necessitatibus possimus, eligendi mollitia dolorem, sapiente aut rerum consectetur itaque maiores. Consequuntur, qui libero. Similique.</p>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, dolorum aperiam nihil alias amet exercitationem necessitatibus possimus, eligendi mollitia dolorem, sapiente aut rerum consectetur itaque maiores. Consequuntur, qui libero. Similique.</p>
             </section>
 
             <section id="srvs" class="services-section">
@@ -54,63 +60,96 @@
                     <img src="images/digital.jpg" alt="Guy using phone and laptop">
                     <h3>Digital Transformation</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis adipisci, sit error nemo laudantium dicta nam alias rerum aliquam dolorum necessitatibus reiciendis eius temporibus laborum doloribus at veniam inventore. Iure?</p>
-                    <button>Digital Plans</button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                    <div class="button-wrapper">
+                        <div class="button">
+                            <button class="services-button">Digital Plans</button><svg class="services-svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                        </div>
+                    </div>
                 </div>
                 
                 <div>
                     <img src="images/marketing.jpg" alt="Laptop displaying analytics">
                     <h3>Marketing</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis adipisci, sit error nemo laudantium dicta nam alias rerum aliquam dolorum necessitatibus reiciendis eius temporibus laborum doloribus at veniam inventore. Iure?</p>
-                    <button>Marketing Plans</button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                    <div class="button-wrapper">
+                        <div class="button">
+                            <button class="services-button">Marketing Plans</button><svg class="services-svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
                     <img src="images/video.jpg" alt="Person using youtube on their phone">
                     <h3>Video Production</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis adipisci, sit error nemo laudantium dicta nam alias rerum aliquam dolorum necessitatibus reiciendis eius temporibus laborum doloribus at veniam inventore. Iure?</p>
-                    <button>Video Plans</button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                    <div class="button-wrapper">
+                        <div class="button">
+                            <button class="services-button">Video Plans</button><svg class="services-svg"  xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
                     <img src="images/web.jpg" alt="Phone pen and grid book on a table">
                     <h3>Web Development</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis adipisci, sit error nemo laudantium dicta nam alias rerum aliquam dolorum necessitatibus reiciendis eius temporibus laborum doloribus at veniam inventore. Iure?</p>
-                    <button>Web Plans</button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                    <div class="button-wrapper">
+                        <div class="button">
+                            <button class="services-button">Web Plans</button><svg class="services-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                        </div>
+                    </div>
                 </div>
 
                 <div>
                     <img src="images/print.jpg" alt="Newspaper bins in the city">
                     <h3>Print</h3>
                     <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Omnis adipisci, sit error nemo laudantium dicta nam alias rerum aliquam dolorum necessitatibus reiciendis eius temporibus laborum doloribus at veniam inventore. Iure?</p>
-                    <button>Print Plans</button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                    <div class="button-wrapper">
+                        <div class="button">
+                            <button class="services-button">Print Plans</button>
+                            <svg class="services-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                        </div>
+                    </div>
                 </div>
             </section>
 
             <section class="vision-section">
                 <!-- place text over image -->
                 <img src="images/vision.jpg" alt="Origami boats">
-                <h3>Our Vision</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias sunt dolorum molestiae animi aliquid laboriosam iure, iusto ex soluta libero vel velit sed, dicta at, est tempora. Dolore, sunt.</p>
-                <button>Learn More</button><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                <div class="vis">
+                    <h3>Our Vision</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Doloribus alias sunt dolorum molestiae animi aliquid laboriosam iure, iusto ex soluta libero vel velit sed, dicta at, est tempora. Dolore, sunt.</p>
+                    <button>Learn More</button>
+                </div>
+                <div class="vis-svg">
+                    <svg class="vision-svg" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M3 22v-20l18 10-18 10z"/></svg>
+                </div>
             </section>
 
             <section id="tms" class="team-section">
-                <h2>Our Team</h2>
                 <div>
-                    <img src="images/john.jpg" alt="A guy posing with a quirky face">
-                    <h3>John Doe</h3>
-                    <h4>CEO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum a provident, distinctio dolor dignissimos, beatae maxime cum quae nihil cupiditate rerum pariatur labore vel soluta repudiandae consectetur totam qui!</p>
+                    <h2>Our Team</h2>
                 </div>
+                    <div>
+                        <img src="images/john.jpg" alt="A guy posing with a quirky face">
+                        <h3>John Doe</h3>
+                        <h4>CEO and Co-owner</h4>
+                        <div class="hr-line">
+                            <hr>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum a provident, distinctio dolor dignissimos, beatae maxime cum quae nihil cupiditate rerum pariatur labore vel soluta repudiandae consectetur totam qui!</p>
+                    </div>
 
-                <div>
-                    <img src="images/bob.jpg" alt="A guy with glasses and a flannel shirt">
-                    <h3>Bob Rite</h3>
-                    <h4>CFO and Co-owner</h4>
-                    <hr>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum a provident, distinctio dolor dignissimos, beatae maxime cum quae nihil cupiditate rerum pariatur labore vel soluta repudiandae consectetur totam qui!</p>
-                </div>
+                    <div>
+                        <img src="images/bob.jpg" alt="A guy with glasses and a flannel shirt">
+                        <h3>Bob Rite</h3>
+                        <h4>CFO and Co-owner</h4>
+                        <div class="hr-line">
+                            <hr>
+                        </div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti eum a provident, distinctio dolor dignissimos, beatae maxime cum quae nihil cupiditate rerum pariatur labore vel soluta repudiandae consectetur totam qui!</p>
+                    </div>
+
             </section>
 
             <section id="cntct" class="contact-section">
